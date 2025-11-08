@@ -858,43 +858,112 @@ footer p {
     header .container {
         flex-direction: column;
         text-align: center;
+        padding: 0.5rem;
+    }
+    
+    .logo h1 {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    
+    .logo p {
+        font-size: 0.85rem;
     }
     
     nav ul {
         margin-top: 1rem;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 0.5rem;
     }
     
     nav ul li {
-        margin: 0.3rem;
+        margin: 0;
+    }
+    
+    nav ul li a {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
     }
     
     .stats-container {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+    }
+    
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .stat-info h3 {
+        font-size: 1.8rem;
+    }
+    
+    .stat-info p {
+        font-size: 0.9rem;
     }
     
     .branch-container {
         grid-template-columns: 1fr;
     }
     
+    .branch-card {
+        padding: 1rem;
+    }
+    
+    .branch-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .dashboard-section h2,
+    .year-section h2 {
+        font-size: 1.4rem;
+    }
+    
     .students-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .student-card {
+        max-width: 100%;
+    }
+    
+    .student-photo {
+        height: 180px;
+    }
+    
+    .student-info {
+        padding: 1rem;
+    }
+    
+    .student-info h3 {
+        font-size: 1.1rem;
+    }
+    
+    .student-info p {
+        font-size: 0.85rem;
     }
     
     .year-tabs {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
     
     .tab-btn {
-        width: 100%;
-        text-align: left;
+        flex: 1;
+        min-width: 45%;
+        text-align: center;
         border-radius: 8px;
-        margin-bottom: 0.3rem;
-    }
-    
-    .year-tabs {
-        border-bottom: none;
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
     }
     
     .modal-body {
@@ -910,36 +979,139 @@ footer p {
     .detail-grid {
         grid-template-columns: 1fr;
     }
+    
+    .detail-item span {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
         width: 95%;
+        padding: 0 10px;
+    }
+    
+    header {
+        padding: 0.8rem 0;
     }
     
     .logo h1 {
-        font-size: 1.4rem;
+        font-size: 0.95rem;
+    }
+    
+    .logo h1 i {
+        display: none;
+    }
+    
+    .logo p {
+        font-size: 0.75rem;
+    }
+    
+    nav ul li a {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+    }
+    
+    nav ul li a i {
+        margin-right: 0.3rem;
+        font-size: 0.85rem;
     }
     
     .dashboard-section,
     .year-section {
-        padding: 1.5rem;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+    
+    .dashboard-section h2,
+    .year-section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .stat-card {
+        padding: 0.8rem;
+    }
+    
+    .stat-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+        margin-right: 0.8rem;
+    }
+    
+    .stat-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .stat-info p {
+        font-size: 0.8rem;
+    }
+    
+    .branch-stats h3 {
+        font-size: 1.1rem;
+    }
+    
+    .branch-card h4 {
+        font-size: 1rem;
+    }
+    
+    .branch-details p {
+        font-size: 0.85rem;
+        margin: 0.6rem 0;
     }
     
     .students-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
-    .stat-info h3 {
-        font-size: 1.8rem;
+    .student-photo {
+        height: 200px;
+    }
+    
+    .student-info h3 {
+        font-size: 1.05rem;
+    }
+    
+    .student-info p {
+        font-size: 0.8rem;
+        margin: 0.3rem 0;
+    }
+    
+    .student-badge {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.75rem;
+    }
+    
+    .tab-btn {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
     }
     
     .modal-content {
         width: 95%;
-        margin: 10% auto;
+        margin: 5% auto;
+    }
+    
+    .modal-header h2 {
+        font-size: 1.3rem;
     }
     
     .close-modal {
         padding: 15px 20px 0 0;
+        font-size: 24px;
+    }
+    
+    .student-detail-photo {
+        height: 220px;
+    }
+    
+    .student-detail-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    footer {
+        padding: 1.5rem 0;
+        font-size: 0.85rem;
     }
 }
